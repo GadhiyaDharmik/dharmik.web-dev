@@ -151,10 +151,10 @@ const getCurrentIcon = () =>
 //validate if user previously chose a theme
 if (selectedTheme) {
   // if theme selected by user previously then we add/remove classes again based on localStorage
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+  document.body.classList[selectedTheme === "dark" ? "add" : "add"](
     darkTheme
   );
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "add"](
     iconTheme
   );
 }
