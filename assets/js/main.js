@@ -174,6 +174,8 @@ else if (
 }else{
    localStorage.setItem("selected-theme", "dark");
   localStorage.setItem("selected-icon", "uil-moon");
+    document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
 }
 
 // Activate / deactivate the theme manually with the button
