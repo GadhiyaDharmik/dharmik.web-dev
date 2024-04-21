@@ -171,6 +171,9 @@ else if (
   // add classes for dark theme in DOM
   document.body.classList.add(darkTheme);
   themeButton.classList.add(iconTheme);
+}else{
+   localStorage.setItem("selected-theme", "dark");
+  localStorage.setItem("selected-icon", "uil-moon");
 }
 
 // Activate / deactivate the theme manually with the button
@@ -179,6 +182,6 @@ themeButton.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
   // We save the theme and the current icon that the user chose
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
+  localStorage.setItem("selected-theme", "dark");
+  localStorage.setItem("selected-icon", "uil-moon");
 });
